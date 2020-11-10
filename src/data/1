@@ -12,15 +12,14 @@ def _process_anotation(file_name):
     return label
 
 def _create_list_paths(path2data):
-    folders = range(1, 11)
-    folders = ['0' + str(i) if i < 10 else '10' for i in folders] 
+    indexes = (1, 11)
+    folders = ['0' + str(i) if i < 10 else '10' for i in indexes] 
     list_paths = []
     for folder in folders:
         for name in glob.glob(os.path.join(path2data, folder, 'pcd' + folder + '*r.png')):
             ab_path = os.path.abspath(name)
             list_paths.append(ab_path)
-    print(len(list_paths))
-    print(folders)
+    print(len(list_paths)
     return list_paths
 
 def make_dataset():
