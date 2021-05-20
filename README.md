@@ -12,13 +12,13 @@ Uses an RGB image to find a single grasp
 
 Formally represent:
 
-    g = {x, y, \theta, h, w}
+    g = {x, y, theta, h, w}
 
-where (x,y) is the center of the rectangle, \theta is the orientation of the rectangle to the horizontal axis of the image, _h_ and _w_ are the dimensions (height and width) of the rectangle.
+where (x,y) is the center of the rectangle, theta is the orientation of the rectangle to the horizontal axis of the image, _h_ and _w_ are the dimensions (height and width) of the rectangle.
 
 ![alt text](./reports/figures/grasp_rep.png)
 
-The purpose of this project is to train a network that given a RGB image is able (with some accuracy) to predict a possible grasp _g_.
+The purpose of this project is to train a network that given a RGB image is able to predict a possible grasp _g_.
 
 # Dataset
 The images used to train the network are from [Cornell Grasping Dataset](http://pr.cs.cornell.edu/grasping/rect_data/data.php).
