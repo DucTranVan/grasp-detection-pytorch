@@ -1,7 +1,28 @@
-grasp
+Grasp
 ==============================
 
-Build a deep learning architecture to predict graspabel locations for robotic manipulation.
+Experiment with deep learning architecture to predict grasping positions with deep neural networks using RGB images for robotic manipulation.
+
+This implementation is mainly based on the very interesting idea from Redmon and Angelova described in [arXiv:1412.3128v2](https://arxiv.org/abs/1412.3128).
+
+# Task
+Figure 1 a simple and natural way of picturing the grasping position in an image would be a rectangle
+
+Uses an RGB image to find a single grasp
+
+Formally represent:
+
+    g = {x, y, \theta, h, w}
+
+where (x,y) is the center of the rectangle, \theta is the orientation of the rectangle to the horizontal axis of the image, _h_ and _w_ are the dimensions (height and width) of the rectangle.
+
+![alt text](./reports/figures/grasp_rep.png)
+
+The purpose of this project is to train a network that given a RGB image is able (with some accuracy) to predict a possible grasp _g_.
+
+# Dataset
+The images used to train the network are from [Cornell Grasping Dataset](http://pr.cs.cornell.edu/grasping/rect_data/data.php).
+
 
 Project Organization
 ------------
@@ -55,3 +76,4 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
