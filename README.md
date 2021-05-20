@@ -6,7 +6,7 @@ Experiment with deep learning architecture to predict grasping positions with de
 This implementation is mainly based on the very interesting idea from Redmon and Angelova described in [arXiv:1412.3128v2](https://arxiv.org/abs/1412.3128).
 
 # Task
-Figure 1 a simple and natural way of picturing the grasping position in an image would be a rectangle
+Figure 1 shows a simple and natural way of picturing the grasping position in an image would be a rectangle
 
 Uses an RGB image to find a single grasp
 
